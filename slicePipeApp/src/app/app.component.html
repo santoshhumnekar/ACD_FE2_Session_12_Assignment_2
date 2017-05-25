@@ -1,0 +1,28 @@
+<div class="container">
+
+  <nav class="navbar navbar-light bg-inverse navbar-inverse">
+  <a class="navbar-brand">
+    <img src="./favicon.ico" width="10" height="10" class="d-inline-block align-left" alt="">
+    Angular 2 Custom Pipe
+  </a>
+  </nav>
+  <hr/>
+  <div class="container"> Data : </div>
+  <hr/>
+  <div *ngFor='let d of data'>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Says</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> {{d.Name}} </td>
+      <td> {{d.Says | slice:0:30}} </td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
